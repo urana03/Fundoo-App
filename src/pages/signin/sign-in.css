@@ -1,0 +1,97 @@
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 75%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 2.3%;
+}
+.logo-in{
+    display: flex;
+    height:5%;
+    width: 80%;
+    justify-content: center;
+}
+
+.first{
+    display: flex;
+    height: 8%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.second{
+    display: flex;
+    height: 5%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.email{
+    display: flex;
+    height: 14%;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.password{
+    display: flex;
+    height: 14%;
+    width: 80%;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.third{
+    display: flex;
+    height:10%;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    right: 10px;
+}
+#third-text{
+    height: 50%;
+    width: 90%;
+    font-size: 16px;
+    color: #454545;
+}
+#third-link{
+    display: flex;
+    width: 50%;
+    position: relative;
+    left: 8px;
+    justify-content: flex-start;
+}
+.four{
+    display: flex;
+    height: 15%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+button{
+    border-radius: 5px;
+    background-color:  #4c8bf5;
+    color: white;
+    height: 60%;
+    width: 20%;
+    font-size: 18px;
+}
