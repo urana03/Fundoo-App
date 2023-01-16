@@ -1,0 +1,43 @@
+.notetwo-main{
+    display: flex;
+    height: 21vh;
+    width: 38vw;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 180px;
+    left: 33%;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 3.5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+.titleandpin{
+    display: flex;
+    width: 95%;
+    height: 30%;
+    align-items:center;
+}
+.takenote{
+    display: flex;
+    width: 95%;
+    height: 45%;
+    align-items: center;
+}
+.bottom-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 25%;
+    gap:5.5%;
+}
+.close{
+    display: flex;
+    height: 95%;
+    width: 28%;
+    align-items: center;
+    justify-content: flex-end;
+}
+a{
+    color: black;
+}
