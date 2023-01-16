@@ -1,0 +1,91 @@
+.main{
+    display: flex;
+    height: 8.5vh;
+    width: 100vw;
+    border-bottom: 1px solid lightgrey;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1%;
+}
+.icon{
+    display: flex;
+    height: 80%;
+    width: 3%;
+    align-items: center;
+    position: relative;
+    left: 1.5%;
+}
+.keep-img{
+    display: flex;
+    height: 65%;
+    width: 2.8%;
+    justify-content: center;
+    position: relative;
+    left: 1%;
+}
+.keep-text{
+    display: flex;
+    height: 100%;
+    width: 5%;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 525;
+    color: #616060;
+}
+.search{
+    display: flex;
+    height: 70%;
+    width: 45%;
+    align-items: center;
+    position: relative;
+    left: 3.5%;
+}
+.refresh-icon{
+    display: flex;
+    position: relative;
+    left: 19%;
+    height: 90%;
+    width: 3%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.list-icon{
+    display: flex;
+    position: relative;
+    left: 19%;
+    height: 90%;
+    width: 3%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.setting-icon{
+    display: flex;
+    position: relative;
+    left: 19%;
+    height: 90%;
+    width: 3%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.apps-icon{
+    display: flex;
+    position: relative;
+    left: 21%;
+    height: 90%;
+    width: 3%;
+    align-items: center;
+    justify-content: center;
+}
+.user-icon{
+    display: flex;
+    position: relative;
+    left: 20%;
+    height: 90%;
+    width: 3%;
+    align-items: center;
+    justify-content: center;
+}
