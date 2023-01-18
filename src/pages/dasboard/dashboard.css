@@ -1,0 +1,11 @@
+.noteList-Dash{
+    display: flex;
+    width: 76vw;
+    height: auto;
+    position: relative;
+    top: 84px;
+    left: 305px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: flex-start;
+}
