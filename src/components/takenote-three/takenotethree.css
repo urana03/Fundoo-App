@@ -5,29 +5,29 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    top: 180px;
-    left: 33%;
+    margin-right: 12px;
+    margin-bottom: 12px;
     border: 1.5px solid #d3d3d3;
     border-radius: 3.5px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
 }
-.titlethree{
+/* .titlethree{
     display: flex;
-    width: 95%;
-    height: 30%;
+    width: 93%;
+    height: 35%;
     align-items:center;
-}
+} */
 .takenote{
     display: flex;
-    width: 95%;
-    height: 45%;
+    width: 93%;
+    height: 40%;
     align-items: center;
 }
 .bottomthree-icons{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 95%;
+    width: 93%;
     height: 25%;
     gap:12%;
 }

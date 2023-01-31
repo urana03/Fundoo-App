@@ -1,4 +1,4 @@
-.main{
+.main-su{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -6,7 +6,7 @@
     align-items: center;
     
 }
-.main-register{
+.main-su-register{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     border: 1px solid lightgray;
     border-radius: 10px;
 }
-.form{
+.form-su{
     display: flex;
     height: 98%;
     width: 65%;
@@ -24,7 +24,7 @@
     align-items: center;
     gap: 1.5%;
 }
-.logo{
+.logo-su{
     display: flex;
     flex-direction: row;
     height: 5%;
@@ -33,7 +33,7 @@
     position: relative;
     right: 23px;
 }
-.logo-text{
+.logo-su-text{
     display: flex;
     height: 7%;
     width: 85%;
@@ -41,43 +41,57 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-.full-name{
+.full-su-name{
     display: flex;
     flex-direction: row;
-    height: 12%;
+    height: 11%;
     width: 85%;
     gap: 3%;
     justify-content: flex-start;
 }
-
-.username{
+.firstName-su{
+     display: flex;
+     width: 50%;
+}
+.lastName-su{
     display: flex;
-    flex-flow: row wrap;
-    height: 14%;
-    width: 80%;
-    position: relative;
-    right: 2.4%;
+    width: 50%;
 }
 
-.first-link{
+.username-su{
     display: flex;
-    height: 8%;
+    flex-flow: row wrap;
+    height: 12%;
+    width: 85%;
+}
+
+.first-su-link{
+    display: flex;
+    height: 9%;
     width: 85%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
    
 }
-.password-input{
+.password-su-input{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 14%;
+    gap: 3%;
+    height: 12%;
     width: 85%;
-    gap: 2%;
     justify-content: flex-start;
 }
-.pass-text{
+.passone-su{
+    display: flex;
+    width: 48%;
+}
+.passtwo-su{
+    display: flex;
+    width: 48%;
+}
+.pass-su-text{
     height: 25%;
     width: 85%;
 }
@@ -92,22 +106,22 @@ a{
     color: #4c8bf5;
 }
 
-.account-img{
+.account-su-img{
     display: flex;
     height: 100%;
     width: 36%;
     flex-direction: column;
     justify-content: center;
 }
-.a-imh{
+.a-su-imh{
     height: 32%;
     width: 95%;
 }
-.text-img{
+.text-su-img{
     height: 10%;
     width: 100%;
 }
-.four{
+.four-su{
     display: flex;
     height: 19%;
     width: 80%;
@@ -116,11 +130,105 @@ a{
     position: relative;
     right: 2.5%;
 }
-button{
+ button{
     border-radius: 5px;
     background-color:  #4c8bf5;
     color: white;
     height: 50%;
     width: 18%;
     font-size: 18px;
+} 
+@media only screen and (min-width: 320px) and (max-width: 480px){
+      .main-su-register{
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .form-su{
+        height: 90%;
+        width: 100%;
+        top: 4%;
+      }
+      .logo-su{
+        height: auto;
+        width: 66%;
+        position: relative;
+        right: 10%;
+      }
+      .logo-su-text{
+        flex-wrap: wrap;
+        height: 9%;
+        width: 88%;
+        font-size: 1.4rem;
+        position: relative;
+        left: 2%;
+      }
+      .full-su-name{
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        gap: 2%;
+      }
+      .firstName-su{
+        width: 100%;
+      }
+      .lastName-su{
+        width: 100%;
+      }
+      .password-su-input{
+        height: 32%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2%;
+      }
+      .passone-su{
+        width: 100%;
+      }
+      .passtwo-su{
+        width: 100%;
+      }
+      .four-su{
+        width: 87%;
+        left: 0.8%;
+        bottom: 4%;
+      }
+      .account-su-img{
+        display: none;
+      }
+     
+    }
+    @media only screen and (min-width: 481px) and (max-width: 768px){
+        .main-su-register{
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+        .form-su{
+          height: 90%;
+          width: 90%;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+        }
+         .logo-su{
+          width: 50%;
+          height: auto;
+          position: relative;
+          right: 17.5%;
+        }
+        .account-su-img{
+            display: none;
+          }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .main-su-register{
+        width: 85%;
+        height: 85%;
+      }
+      .logo-su{
+        width: 66%;
+        height: auto;
+        position: relative;
+        right: 10%;
+      }
+      
 }

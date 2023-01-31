@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import SignIn from './pages/signin/sign-in';
+import SignUp from './pages/sign-up/sign-up';
+import Header from './components/header-one/header';
+import TakeNoteOne from './components/takenote-one/takenoteone';
+import TakeNoteTwo from './components/takenote-two/takenotetwo';
+import TakeNoteThree from './components/takenote-three/takenotethree';
+import Dashboard from './pages/dasboard/dashboard';
+import PrimarySearchAppBar from './components/mui-design/header-mui';
+import RouterFundoo from './components/router/router';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+              {/* <SignIn /> */}
+              {/* <SignUp />     */}
+             {/* <Header />     */}
+            {/* <TakeNoteOne/> */}  
+             {/* <TakeNoteTwo/>   */}
+             {/* <TakeNoteThree/>    */}
+                {/* <Dashboard/>     */}
+               {/* <PrimarySearchAppBar/> */}
+               <RouterFundoo/>
+    </div> 
   );
 }
 

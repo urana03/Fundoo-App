@@ -6,28 +6,21 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import { connect } from 'react-redux';
 
-const drawerWidth = 240;
+const drawerWidth = 220;
 
 const openedMixin = (theme) => ({
- marginTop:64,
+ marginTop:65,
   width: drawerWidth,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
@@ -37,7 +30,7 @@ const openedMixin = (theme) => ({
 });
 
 const closedMixin = (theme) => ({
-    marginTop:64,
+    marginTop:65,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -66,12 +59,14 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function MiniDrawer(props) {
+function MiniDrawer(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const selectOption = (data) =>{
            props.listenToDrawer(data)
+          //  props.dispatch({type:`${data}`})
+          props.dispatch({type:data})
   }
 
   return (
@@ -89,10 +84,12 @@ export default function MiniDrawer(props) {
               >
                 <ListItemIcon
                    sx={{
+                    minWidth: 0,
                     mr: open ? 3 : 'auto',
-                   justifyContent: 'center',
-                   marginRight:3,
-                   marginLeft:2
+                    justifyContent: 'center',
+                    marginRight:3,
+                    marginLeft:2
+                    
                   }}
                 >
                  <LightbulbOutlinedIcon size='large'/>
@@ -110,10 +107,11 @@ export default function MiniDrawer(props) {
               >
                 <ListItemIcon
                   sx={{
+                    minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
-                    marginLeft:2,
-                    marginRight:3
+                    marginRight:3,
+                    marginLeft:2
                   }}
                 >
                  <NotificationsNoneOutlinedIcon/>
@@ -131,10 +129,11 @@ export default function MiniDrawer(props) {
               >
                 <ListItemIcon
                   sx={{
+                    minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
-                    marginLeft:2,
-                    marginRight:3
+                    marginRight:3,
+                    marginLeft:2
                   }}
                 >
                  <EditOutlinedIcon/>
@@ -152,6 +151,7 @@ export default function MiniDrawer(props) {
               >
                 <ListItemIcon
                   sx={{
+                    minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
                     marginRight:3,
@@ -173,10 +173,11 @@ export default function MiniDrawer(props) {
               >
                 <ListItemIcon
                   sx={{
+                    minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
                     marginRight:3,
-                    marginLeft:2
+                    marginLeft:2                   
                   }}
                 >
                  <DeleteOutlineOutlinedIcon/>
@@ -190,3 +191,4 @@ export default function MiniDrawer(props) {
   );
 }
 
+export default connect()(MiniDrawer)

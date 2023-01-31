@@ -19,7 +19,9 @@ import RefreshSharpIcon from '@mui/icons-material/RefreshSharp';
 import SplitscreenSharpIcon from '@mui/icons-material/SplitscreenSharp';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AppsRoundedIcon from '@mui/icons-material/AppsRounded';
+import { makeStyles } from '@mui/styles';
 import { connect, useSelector } from 'react-redux';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -62,7 +64,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function PrimarySearchAppBar(props) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  // const classes = useStyles();
+   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
@@ -163,8 +166,8 @@ function PrimarySearchAppBar(props) {
   );
 
   return (
-    <Box sx={{flexGrow: 1}}>
-      <AppBar position="static" color='transparent'>
+    <Box sx={{flexGrow: 1}} >
+      <AppBar  position="static" color='transparent'>
         <Toolbar>
         <Box sx={{display:'flex',width:55,height:'auto',justifyContent:'flex-start',}}>
           <IconButton 
@@ -226,9 +229,9 @@ function PrimarySearchAppBar(props) {
               size="large"
               edge="end"
               aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
+              // aria-controls={menuId}
+               aria-haspopup="true"
+              // onClick={handleProfileMenuOpen}
               color="inherit"
             >
               <AccountCircle />
@@ -239,9 +242,9 @@ function PrimarySearchAppBar(props) {
             <IconButton
               size="large"
               aria-label="show more"
-              aria-controls={mobileMenuId}
+              // aria-controls={mobileMenuId}
               aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
+              // onClick={handleMobileMenuOpen}
               color="inherit"
             >
               <MoreIcon />
@@ -249,8 +252,8 @@ function PrimarySearchAppBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
+      {/* {renderMobileMenu}
+      {renderMenu} */}
     </Box>
   );
 }

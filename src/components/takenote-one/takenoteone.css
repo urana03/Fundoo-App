@@ -5,11 +5,10 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 180px;
     left: 33%;
     border: 1.5px solid lightgray;
     border-radius: 3.5px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .text{
     display: flex;

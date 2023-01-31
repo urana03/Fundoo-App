@@ -30,9 +30,9 @@ export default function ColorPopper(props) {
 
   return (
     <div>
-      <ColorLensOutlinedIcon fontSize='inherit' onClick={handleClick}/>
+      <ColorLensOutlinedIcon fontSize='inherit' onClick={handleClick} />
       <Popper id={id} open={open} anchorEl={anchorEl}>
-        <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper',display:'flex' }}>
+        <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper',display:'flex',}}>
           {
             colors.map((color) =>(<div style={{height:25,width:25,backgroundColor:color,borderRadius:50,marginRight:5}} onClick={() => selectColor(color)}></div>))
           }

@@ -1,11 +1,34 @@
 .noteList-Dash{
     display: flex;
-    width: 76vw;
+    width: 80vw;
     height: auto;
     position: relative;
-    top: 84px;
-    left: 305px;
+    top: 60px;
+    left: 16%;
     flex-wrap: wrap;
-    margin-left: 20px;
-    justify-content: flex-start;
+    margin-left: 20px; 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .noteList-Dash{
+         display: flex;
+         flex-direction: column;
+         width: 75%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .noteList-Dash{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width:80%;
+       }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .noteList-Dash{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:80%;
+    }
 }

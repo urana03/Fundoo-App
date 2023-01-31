@@ -1,12 +1,11 @@
-.main{
+.mainsf{
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
 }
-.main-login{
+.mainsf-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,47 +15,46 @@
     border: 1px solid lightgray;
     border-radius: 10px;
     flex-wrap: wrap;
-    gap: 2.3%;
 }
-.logo-in{
+.logosf-in{
     display: flex;
     height:5%;
     width: 80%;
     justify-content: center;
 }
 
-.first{
+.firstsf{
     display: flex;
-    height: 8%;
+    height: 7%;
     width: 80%;
     justify-content: center;
     align-items: center;
     font-size: 25px;
 }
-.second{
+.secondsf{
     display: flex;
-    height: 5%;
+    height: 8%;
     width: 80%;
     justify-content: center;
     align-items: center;
     font-size: 18px;
 }
-.email{
+.emailsf{
     display: flex;
-    height: 14%;
+    height: 20%;
     width: 80%;
     flex-wrap: wrap;
 }
-.password{
+.passwordsf{
     display: flex;
-    height: 14%;
+    height: 21%;
     width: 80%;
     flex-wrap: wrap;
 }
-a{
+.a{
     text-decoration: none;
 }
-.third{
+.thirdsf{
     display: flex;
     height:10%;
     width: 80%;
@@ -67,6 +65,7 @@ a{
     right: 10px;
 }
 #third-text{
+    display: flex;
     height: 50%;
     width: 90%;
     font-size: 16px;
@@ -79,7 +78,7 @@ a{
     left: 8px;
     justify-content: flex-start;
 }
-.four{
+.foursf{
     display: flex;
     height: 15%;
     width: 80%;
@@ -95,3 +94,42 @@ button{
     width: 20%;
     font-size: 18px;
 }
+
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .mainsf-login{
+        width: 100%;
+        height:100%;
+        border:none;
+    }
+    #third-text{
+        width: 100%;
+        position: none;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+}
+ @media only screen and (min-width: 481px) and (max-width:768px){
+        .mainsf-login{
+            width: 80%;
+            height:85%;
+        }
+        #third-text{
+            width: 100%;
+            position: none;
+            flex-wrap: wrap;
+            margin-left: 10px;
+        }
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
+    .mainsf-login{
+        width: 80%;
+        height:85%;
+    }
+    #third-text{
+        width: 100%;
+        position: none;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+}
+
