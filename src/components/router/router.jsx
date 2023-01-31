@@ -5,6 +5,7 @@ import SignUp from '../../pages/sign-up/sign-up'
 import SignIn from '../../pages/signin/sign-in'
 
 function RouterFundoo(){
+    console.log('')
     return(
        <div>
         <Router>
